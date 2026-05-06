@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Report | Paliqueron</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../assets/css/weekly_progress.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-wide" href="../index.html" style="letter-spacing: 1px;">Paliqueron's Portfolio</a>
+        </div>
+    </nav>
+
+    <header class="report-header">
+       <div class="container">
+            <a href="../index.html#progress" class="back-btn mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+            Back to Portfolio
+            </a>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="fw-bold text-uppercase tracking-wide mb-2" style="color: var(--color-light); letter-spacing: 1px;"> March 24, 2026 to March 27, 2026</div>
+                    <h1 class="display-4 fw-bolder mb-3 text-white">Week 4: Backend File Uploading and Database Normalization</h1>
+                    <p class="lead">My primary focus was implementing the backend logic to handle bulk uploading of Excel files containing provincial pricing data. I also identified structural inefficiencies and applied database normalization principles to optimize data storage.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-card">
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="narrative-text">
+                        <p class="lead fw-normal mb-4" style="color: var(--color-dark);">I deployed the backend file-upload module, achieving an 85% accuracy rate in automated data extraction. I faced challenges mapping parsed data due to file variability, which I resolved by designing a rigid, standardized Excel template. Furthermore, I refactored the database schema by extracting specifications into a new product variants table, improving structural integrity and scalability.</p>
+                        
+                        <h4>Key Tasks Accomplished</h4>
+                        <ul class="mt-3">
+                            <li>Developed backend functionality for bulk Excel file uploads.</li>
+                            <li>Programmed extraction of key data points (commodity, brand, SRP, store prices).</li>
+                            <li>Standardized Excel file templates to minimize extraction errors.</li>
+                            <li>Applied database normalization by creating a product variants table.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="gallery-heading">Photo Documentation</h3>
+                    <div class="row g-4 mt-1">
+                        
+                        <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week4.1.png" alt="week4.1" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week4.2.png" alt="week4.2" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week4.3.png" alt="week4.3" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="page-footer text-center py-4 text-muted">
+        <div class="container">
+            <p class="mb-0 fw-medium" style="opacity: 0.8; font-size: 0.95rem;">&copy; 2026 Paliqueron</p>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

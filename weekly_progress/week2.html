@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Report | Paliqueron</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../assets/css/weekly_progress.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-wide" href="../index.html" style="letter-spacing: 1px;">Paliqueron's Portfolio</a>
+        </div>
+    </nav>
+
+    <header class="report-header">
+       <div class="container">
+            <a href="../index.html#progress" class="back-btn mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+            Back to Portfolio
+            </a>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="fw-bold text-uppercase tracking-wide mb-2" style="color: var(--color-light); letter-spacing: 1px;"> March 10, 2026 to March 13, 2026 </div>
+                    <h1 class="display-4 fw-bolder mb-3 text-white">Week 2: System Refinement, UI Development, and Database Architecture</h1>
+                    <p class="lead">This week focused on pivoting the project’s scope based on supervisor feedback, transitioning from a general reporting tool to a specialized "Price Monitoring System." My work centered on front-end development and designing a robust database architecture to handle real-world DTI data.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-card">
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="narrative-text">
+                        <p class="lead fw-normal mb-4" style="color: var(--color-dark);">During a consultation with my Division Supervisor, we refined the project goals to focus on a system that tracks the lowest and highest prices per SKU, monitors regional trends, and generates visual graphs. I spent the week mapping the entire system workflow—from the initial Excel file upload to the final report generation. I successfully designed and coded the front-end interfaces for the Dashboard, Provincial Reports, Regional Summary, and Price Trends pages using HTML, CSS, and Bootstrap.</p>
+                        
+                        <p>A major technical challenge I addressed was architectural: the source Excel files organize data horizontally, which is inefficient for databases. To resolve this, I researched and applied Third Normal Form (3NF) principles to create a Logical Data Model and ERD that separates product/store details from weekly price logs. This ensures the system remains fast and prevents data duplication. I also gained professional insights into how DTI classifies Basic Necessities (BN) and Prime Commodities (PC).</p>
+
+                        <h4>Key Tasks Accomplished</h4>
+                        <ul class="mt-3">
+                            <li>Refined project scope to a "Price Monitoring System" focused on SKU-level tracking and price trends.</li>
+                            <li>Designed and wrote the front-end code for the Dashboard, Provincial, and Regional report screens.</li>
+                            <li>Mapped the end-to-end system workflow from Excel ingestion to data visualization.</li>    
+                            <li>Developed the Entity-Relationship Diagram (ERD) and Logical Data Model for the MySQL database.</li>
+                            <li>Applied 3NF normalization to restructure horizontal Excel data into a vertical database format.</l>
+                        </ul>
+                    </div>
+
+                    <h3 class="gallery-heading">Photo Documentation</h3>
+                    <div class="row g-4 mt-1">
+                        
+                        <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week2.1.png" alt="week2.1" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week2.2.png" alt="week2.2" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week2.3.jpg" alt="week2.3" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="doc-img-card">
+                                <div class="overflow-hidden">
+                                    <img src="../assets/images/week2.4.png" alt="week2.4" class="doc-img">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="page-footer text-center py-4 text-muted">
+        <div class="container">
+            <p class="mb-0 fw-medium" style="opacity: 0.8; font-size: 0.95rem;">&copy; 2026 Paliqueron</p>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
