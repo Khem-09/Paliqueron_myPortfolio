@@ -134,7 +134,7 @@
         /* Footer */
         .page-footer {
             background-color: var(--color-dark); 
-            color: var(--color-lightest);
+            color: white;
             border-top: none;
         }
 
