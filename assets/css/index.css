@@ -1,16 +1,15 @@
 :root {
-            /* User Requested Palette */
             --color-dark: #27374D;
             --color-mid: #526D82;
             --color-light: #9DB2BF;
             --color-lightest: #DDE6ED;
             --white: #ffffff;
+             --primary-custom: #526D82;
 
-            /* Functional Mappings */
             --bg-body: var(--color-lightest);
             --text-main: var(--color-dark);
-            --text-muted: #3a5061; /* Slightly darker than mid for better reading contrast */
-            --border-soft: rgba(157, 178, 191, 0.4); /* Transparent version of light */
+            --text-muted: #3a5061;
+            --border-soft: rgba(157, 178, 191, 0.4); 
         }
 
         html, body {
@@ -236,6 +235,147 @@
             box-shadow: 0 15px 25px rgba(39, 55, 77, 0.3);
         }
 
+            /* Badge Styling */
+    .tech-badge-v2 {
+        background: var(--color-lightest);
+        color: var(--color-dark);
+        border: 1px solid var(--border-soft);
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+    }
+    .tech-badge-v2:hover {
+        background: var(--color-dark);
+        color: white;
+        transform: translateY(-2px);
+    }
+    
+    /* Objective Grid */
+    .objective-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .objective-item {
+        display: flex;
+        gap: 1.25rem;
+        padding: 1rem;
+        border-radius: 12px;
+        transition: background 0.3s ease;
+    }
+    .objective-item:hover {
+        background-color: #f8fafc;
+    }
+    .obj-icon {
+        width: 45px;
+        height: 45px;
+        background: var(--color-dark);
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    .objective-item h5 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+        color: var(--color-dark);
+    }
+    
+    /* Scope Cards */
+    .scope-card {
+        padding: 1.5rem;
+        background: #ffffff;
+        border: 1px solid var(--border-soft);
+        border-radius: 12px;
+    }
+    .custom-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem !important;
+    }
+    .custom-list li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--color-mid);
+        font-weight: bold;
+    }
+    
+    /* Metadata Styling */
+    .uppercase-tracking {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 0.8rem;
+        color: var(--color-mid);
+    }
+    .meta-item label {
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: #888;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    
+    /* Github Button */
+    .github-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #24292e;
+        color: white;
+        padding: 12px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .github-btn:hover {
+        background: #000;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* Status Indicator */
+    .status-indicator {
+        font-size: 0.8rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .status-indicator.active::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #28a745;
+        border-radius: 50%;
+        display: inline-block;
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.4; }
+        100% { opacity: 1; }
+    }
+    
+    .project-category {
+        font-size: 0.75rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--color-mid);
+    }
+
         /* Responsive Tweaks */
         @media (min-width: 768px) {
             .intro-details .list-group-item strong { display: inline; margin-bottom: 0; font-size: 0.95rem; margin-right: 10px;}
@@ -252,3 +392,6 @@
             .report-header { padding: 60px 0 80px 0; }
             .display-4 { font-size: 2.2rem; }
         }
+        @media (max-width: 992px) {
+    .border-end { border: none !important; border-bottom: 1px solid var(--border-soft) !important; }
+    }
